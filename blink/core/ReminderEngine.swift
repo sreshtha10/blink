@@ -44,8 +44,19 @@ final class ReminderEngine: ObservableObject {
     }
     
     private func triggerReminder() {
-        print("Blink reminder fired")
-        NotificationService.shared.sendBlinkNotification()
-        FloatingWindowService.shared.showBlinkOverlay()
+        
+        if settings.showSystemNotification {
+            NotificationService.shared.sendBlinkNotification()
+        }
+            
+        if settings.showFloatingView {
+            FloatingWindowService.shared.showBlinkOverlay()
+        }
+            
+        if settings.playSound {
+            SoundService.shared.play(settings.selectedSound)
+        }
+        
+        print("Reminder Triggered")
     }
 }
