@@ -46,5 +46,6 @@ final class ReminderEngine: ObservableObject {
     private func triggerReminder() {
         print("Blink reminder fired")
         NotificationService.shared.sendBlinkNotification()
+        FloatingWindowService.shared.showBlinkOverlay()
     }
 }
