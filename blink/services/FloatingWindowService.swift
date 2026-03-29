@@ -16,20 +16,22 @@ final class FloatingWindowService{
     private init(){}
     
     func showBlinkOverlay(){
-        if window == nil{
-            createWindow()
+        DispatchQueue.main.async {
+            if self.window == nil{
+                self.createWindow()
+            }
+            
+            guard let window = self.window else { return }
+            
+            window.alphaValue=0
+            window.orderFrontRegardless()
+            
+            //fade in
+            NSAnimationContext.runAnimationGroup({ context in
+                context.duration = 0.3
+                window.animator().alphaValue = 1
+            })
         }
-        
-        guard let window else { return }
-        
-        window.alphaValue=0
-        window.orderFrontRegardless()
-        
-        //fade in
-        NSAnimationContext.runAnimationGroup({ context in
-            context.duration = 0.3
-            window.animator().alphaValue = 1
-        })
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2){
             self.hideOverlay()

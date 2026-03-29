@@ -51,6 +51,7 @@ final class ReminderEngine: ObservableObject {
             
         if settings.showFloatingView {
             FloatingWindowService.shared.showBlinkOverlay()
+            print("Show floating")
         }
             
         if settings.playSound {
