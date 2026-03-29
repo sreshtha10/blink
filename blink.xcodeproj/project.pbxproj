@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F2C875082F78A6F000C87C59 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2C875072F78A6E500C87C59 /* .gitignore */; };
+		F2C8752F2F78C5CC00C87C59 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = F2C8752E2F78C5C400C87C59 /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		F2C874BA2F788E7700C87C59 /* blinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C874C42F788E7700C87C59 /* blinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C875072F78A6E500C87C59 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2C8752E2F78C5C400C87C59 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +82,7 @@
 		F2C874A02F788E7700C87C59 = {
 			isa = PBXGroup;
 			children = (
+				F2C8752E2F78C5C400C87C59 /* Readme.md */,
 				F2C874AB2F788E7700C87C59 /* blink */,
 				F2C874BD2F788E7700C87C59 /* blinkTests */,
 				F2C874C72F788E7700C87C59 /* blinkUITests */,
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C8752F2F78C5CC00C87C59 /* Readme.md in Resources */,
 				F2C875082F78A6F000C87C59 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
