@@ -10,13 +10,9 @@ import SwiftUI
 @main
 struct BlinkApp: App {
     
-    init(){
-        let _ = ReminderEngine.shared
-    }
-    
     var body: some Scene {
-        WindowGroup {
-            Text("Hello, World!")
+        MenuBarExtra("Blink", systemImage: "eye"){
+            MenuBarView()
         }
     }
 }
